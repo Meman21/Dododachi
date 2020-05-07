@@ -1,0 +1,11 @@
+@model Pet
+<link rel="stylesheet" href="~/css/lost.css">
+
+<div class="wrapper">
+    <p><span>Fullness:</span> @Model.Fullness | <span>Happiness:</span> @Model.Happiness | <span>Meals:</span> @Model.Meals | <span>Energy:</span> @Model.Energy</p>
+    <div class="info">
+        <img src="@ViewBag.PetImage" alt="Dragonite">
+        <p class="result">@ViewBag.Result</p>
+    </div>
+    <a href="reset" class="btn btn-success">Try Again?</a>
+</div>

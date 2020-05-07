@@ -1,0 +1,21 @@
+.wrapper {
+    width: 1000px;
+}
+
+* {
+    text-align: center;
+}
+
+img {
+    width:650px;
+    height: 400px;
+}
+
+span {
+    text-decoration: underline;
+}
+
+.result {
+    font-weight: bold;
+    color: red;
+}

@@ -1,0 +1,16 @@
+.wrapper {
+    width: 1000px;
+}
+
+* {
+    text-align: center;
+}
+
+span {
+    text-decoration: underline;
+}
+
+.result {
+    font-weight: bold;
+    color: green;
+}

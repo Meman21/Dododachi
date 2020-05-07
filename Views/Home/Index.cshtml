@@ -1,0 +1,28 @@
+﻿@model Pet
+<link rel="stylesheet" href="~/css/index.css">
+
+<div class="wrapper">
+    <p><span>Fullness:</span> @Model.Fullness | <span>Happiness:</span> @Model.Happiness | <span>Meals:</span> @Model.Meals | <span>Energy:</span> @Model.Energy</p>
+    <div class="info">
+        <img src="@ViewBag.PetImage" alt="Dragonite">
+        @{
+            // if dojodachi didn't like the result, turn text red
+            if (@ViewBag.Result == "Your Dojodachi didn't like that. Fullness +0, Meals -1" || @ViewBag.Result == "Your Dojodachi didn't feel like playing. Happiness +0, Energy -5")
+            {
+                <p class="bad-result">@ViewBag.Result</p>
+            }
+            // turn green if dojodachi did like
+            else
+            {
+                <p class="good-result">@ViewBag.Result</p>
+            }
+        }
+    </div>
+    <div class="links">
+        <a href="feed" class="btn btn-primary">Feed</a>
+        <a href="play" class="btn btn-primary">Play</a>
+        <a href="work" class="btn btn-primary">Work</a>
+        <a href="sleep" class="btn btn-primary">Sleep</a>
+    </div>
+    <a href="reset" class="btn btn-danger">Reset</a>
+</div>
